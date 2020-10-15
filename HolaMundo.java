@@ -10,13 +10,13 @@ package holamundo;
  * @author tambo
  */
 public class HolaMundo {
-
+ 
     /**
      * @param args the command line arguments
      */
     private static final int CASO_1 = 1;
     private static final int CASO_2 = 2;
-    
+    static int opcion = 1;
     
     public static void printOpcionUno(){
         System.out.println("Opcion 1");
@@ -27,10 +27,7 @@ public class HolaMundo {
         System.out.println("Opcion 2");
     }
     
-    
-    public static void main(String[] args) {
-        int opcion = 0;
-        
+    public static void switchOpciones(){
         switch(opcion){
             case CASO_1:
                 printOpcionUno();
@@ -41,6 +38,11 @@ public class HolaMundo {
             default:
                 System.out.println("Opcion no encontrada");
         }
+    }
+    
+    public static void main(String[] args) {
+        
+        switchOpciones();
         
         
     }
